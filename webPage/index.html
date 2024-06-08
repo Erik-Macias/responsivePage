@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUBLI-ERJA</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <!-- Nabvar que contiene el nombre de mi emprendimiento, inicio, sobre mi, mis productos y mi contacto -->
+    <header class="navbar-header" id="navbar-header">
+      <a href="#" class="brand-link is-size-3">
+        <i class="zmdi zmdi-store"></i>
+        <span class="brand">Subli-ErJa</span>
+      </a>
+      <button class="navbar-menu-mobile open is-size-3 is-hidden-desktop" id="navbar-menu-mobile">
+        <i class="zmdi zmdi-menu"></i>
+      </button>
+    </header>
+    <!-- Nabvar que contiene el nombre de mi emprendimiento, inicio, sobre mi, mis productos y mi contacto-->
+
+      <ul class="navbar-container" id="navbar-container">
+        <li class="navbar-item">
+          <a data-scroll href="#top" id="inicio" class="navbar-a navbar-link-active">Inicio</a>
+        </li>
+        <li class="navbar-item">
+          <a data-scroll href="#about" id="acercaDe" class="navbar-a">Acerca de mí</a>
+        </li>
+        <li class="navbar-item">
+          <a data-scroll href="#section2" id="section" class="navbar-a">Lo que hago</a>
+        </li>
+        <li class="navbar-item">
+          <a data-scroll href="#gallery" id="photos" class="navbar-a">Mis productos</a>
+        </li>
+        <li class="navbar-item">
+          <a data-scroll href="#contacto" id="form" class="navbar-a">Contacto</a>
+        </li>
+      </ul>
+  
+  </nav>
+  <!-- Sección del carrusel que contiene informacion sobre lo que vendo -->
+
+  <div class="section-body" id="top">
+  <div class="slide-contenedor" >
+      <div class="miSlider fade">
+          <div class="slider-body">
+              <span class="tag-slider is-size-5-desktop">Increible</span>
+              <h2 class="is-size-3-mobile has-text-weight-bold slider-title">ChromaLuxe</h2>
+              <p class="description-slider is-size-7-mobile"> Calidad fotográfica máxima: detalles, reproducción de color y calidad general - Acabado de alta precisión - Máxima durabilidad y resistencia: resistentes a la humedad y las manchas. </p>
+            </div>
+          <img src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+          <div class="slider-body">
+              <span class="tag-slider">Increible</span>
+              <h2 class="is-size-3-mobile has-text-weight-bold slider-title">MausePad</h2>
+              <p class="description-slider is-size-7-mobile"> Superficie ultra suave: Desliza tu mouse con precisión y sin esfuerzo - Base antideslizante: Permanece en su lugar incluso durante las sesiones más intensas - Durabilidad excepcional: Resiste el desgaste diario para un uso prolongado. </p>
+            </div>
+          <img src="img/slider-2.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+          <div class="slider-body">
+              <span class="tag-slider">DragonBall</span>
+              <h2 class="is-size-3-mobile has-text-weight-bold slider-title">Jarro</h2>
+              <p class="description-slider is-size-7-mobile"> Diseños únicos y vibrantes - Personalización total - Calidad premium - Regalo ideal. </p>
+            </div>
+          <img src="img/slider-3.jpg" alt="">
+      </div>
+      <div class="direcciones">
+          <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+          <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+      </div>
+      <div class="dots">
+          <span class="dot active" onclick="posicionSlide(1)"></span>
+          <span class="dot" onclick="posicionSlide(2)"></span>
+          <span class="dot" onclick="posicionSlide(3)"></span>
+      </div>
+  </div>
+   <!-- Sobre mi -->
+  <div class="container" id="about">
+    <div class="columns is-vcentered">
+      <div class="column is-half">
+        <div class="about-me">
+          <figure class="image">
+            <img class="about-me-img" src="img/about-me-mobile.jpeg" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="column is-half section-about-me">
+        <h1 class="title is-size-3-mobile is-size-2-tablet has-text-weight">Acerca de mí</h1>
+        <h5 class="subtitle is-size-6-mobile is-size-5-tablet separator">Profesional en ChromaLuxe</h5>
+        <p class="text is-size-7-mobile">¡Hola! Soy un apasionado estudiante de la carrera de Tecnologías de la Información, donde exploro y aprendo sobre el fascinante mundo de la tecnología y cómo ésta puede transformar nuestras vidas. Mi interés por las TI no solo se queda en el aula, sino que también se refleja en mi espíritu emprendedor.
+          Además de mis estudios, tengo un emprendimiento especializado en productos con temática de anime. Ofrecemos una variedad de tazas únicas y cuadros de Chromalux, todos inspirados en el vibrante y dinámico mundo del anime. Este negocio me permite combinar mis dos grandes pasiones: la tecnología y el anime, creando productos que alegran a los fanáticos de esta cultura alrededor del mundo.          
+         ¡Gracias por tomarte el tiempo de conocerme un poco más!</p>
+        <p class="text is-size-7-mobile">
+          Mi objetivo es seguir creciendo tanto académicamente como en mi emprendimiento, utilizando los conocimientos adquiridos en mi carrera para innovar y expandir mi negocio, siempre manteniendo la calidad y originalidad que nos caracteriza..
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- Sobre lo que hago-->
+  <div id="section2" class="hero my-hero" style="--banner: url(../img/hero-img.jpg); --bg-atachment: fixed;">
+    <div class="container-hero">
+
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-full has-text-centered">
+            <h1 class="title has-text-white is-size-3-mobile is-size-1-tablet">
+              Lo que hago
+            </h1>
+            <h5 class="subtitle is-size-5">
+              Para los amantes del anime
+            </h5>
+          </div>
+          <div class="column">
+            <div class="banner-container">
+              <span class="container-icon">
+                <i class="zmdi zmdi-mouse zmdi-hc-2x"></i>
+              </span>
+              <h4 class="is-size-5 has-text-centered has-text-weight-bold">Para tus Mejores Momentos de Juego y Trabajo</h4>
+              <p class="has-text-centered is-size-7-mobile">Transformo tus sesiones de juego y trabajo en experiencias fluidas y precisas con mis mousepads de alta calidad, diseñados para durar y ofrecer comodidad excepcional.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="banner-container">
+              <span class="container-icon">
+                <i class="zmdi zmdi-image zmdi-hc-2x"></i>
+              </span>
+              <h4 class="is-size-5 has-text-centered has-text-weight-bold">Arte que Ilumina tu Espacio</h4>
+              <p class="has-text-centered is-size-7-mobile">Capturo la esencia del anime en vibrantes cuadros de Chromalux, brindando a los fanáticos arte duradero que embellece cualquier espacio con su brillo y detalle único.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="banner-container">
+              <span class="container-icon">
+                <i class="zmdi zmdi-coffee zmdi-hc-2x"></i>
+              </span>
+              <h4 class="is-size-5 has-text-centered has-text-weight-bold">Un Toque Personal en Cada Sorbo</h4>
+              <p class="has-text-centered is-size-7-mobile">Creo jarros personalizados que combinan funcionalidad y pasión por el anime, permitiendo a los fanáticos disfrutar de sus bebidas favoritas con estilo y un toque personal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Galeria de productos-->
+  <div class="container" id="gallery">
+    <div class="columns is-multiline">
+      <div class="column has-text-centered is-full">
+        <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight">Mis productos</h1>
+        <h5 class="subtitle is-size-6">Para los amantes del anime</h5>
+      </div>
+      <div class="column">
+        <div class="gallery-container" id="gallery-container">
+          <div class="gallery-item">
+            <figure class="image">
+
+              <img class="gallery-img" src="img/gallery-1-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img class="gallery-img" src="img/gallery-2-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+
+              <img class="gallery-img" src="img/gallery-3-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-4-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-5-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-6-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-7-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-8-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-9-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-10-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-11-thumb.jpg" alt="">
+            </figure>
+          </div>
+          <div class="gallery-item">
+            <figure class="image">
+              <img  class="gallery-img" src="img/gallery-12-thumb.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contacto -->
+  <div class="container" id="contacto">
+    <div class="columns is-multiline">
+      <div class="column has-text-centered is-full">
+        <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight">Contactame</h1>
+        <h5 class="subtitle is-size-6">Enviame un mensaje</h5>
+      </div>
+      <div class="column">
+        <form action="#">
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Nombre Completo</label>
+                <div class="control">
+                  <input class="is-radiusless is-shadowless input is-medium" type="text" placeholder="Nombre completo">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <labe class="label">Número de teléfono</label>
+                    <input class="is-radiusless is-shadowless input is-medium" type="text"
+                      placeholder="Número de telefono">
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="field">
+                <div class="control">
+                  <label class="label">Correo Electrónico</label>
+                  <input class="is-radiusless is-shadowless input is-medium" type="text"
+                    placeholder="Correo Electrónico">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="is-radiusless is-shadowless button is-medium is-fullwidth" type="button">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Pié de pagina -->
+  <footer class="my-footer">
+    <div class="hero my-hero" style="--banner: url(../img/footer-banner.jpg); --bg-atachment: none;">
+      <div class="container-hero">
+        <div class="columns is-multiline">
+          <div class="column is-full has-text-centered">
+            <span class="has-text-white">
+              <i class="is-size-3-mobile is-size-1 zmdi zmdi-camera"></i>
+            </span>
+          </div>
+          <div class="column is-full">
+            <ul class="my-footer-ul">
+              <li  class="my-footer-item">
+                <a href="#" class="my-footer-link facebook">
+                  <i class="zmdi zmdi-facebook"></i>
+                </a>
+              </li>
+              <li class="my-footer-item">
+                <a href="#" class="my-footer-link instagram">
+                  <i class="zmdi zmdi-instagram"></i>
+                </a>
+              </li>
+              <li class="my-footer-item">
+                <a href="#" class="my-footer-link pinterest">
+                  <i class="zmdi zmdi-pinterest"></i>
+                </a>
+              </li>
+              <li class="my-footer-item">
+                <a href="#" class="my-footer-link twitter">
+                  <i class="zmdi zmdi-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="column has-text-centered is-size-7-mobile  is-full">
+            <p class="footer-p has-text-white">© 2024 Subli-ErJa. Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Smooth Scroll de Javascript -->
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
